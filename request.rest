@@ -1,0 +1,76 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Algo",
+    "price": 2500,
+    "image": "Alguma url"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/669c05812cc1efd360ff8a8e
+
+###
+DELETE http://localhost:3000/api/services/669c05812cc1efd360ff8a8e
+
+###
+
+PUT http://localhost:3000/api/services/669c078fe0b239711390d4dd
+Content-Type: application/json
+
+{
+    "name": "Algum serviço MODIFICADO PARA TESTE",
+    "description": "UMA BREVE DESCRIÇÃO QUE FOI ALTERADO",
+    "price": 1500,
+    "image": "Alguma url"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Danner",
+    "description": "Uma festa pique project x",
+    "budget": 18500,
+    "image": "UMA URL QUALQUER!",
+    "services": [{
+        "name": "Algum serviço 2",
+        "description": "Algo",
+        "price": 2500,
+        "image": "Alguma url"
+    }]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/669c3e13244c51df786b21d4
+
+###
+DELETE  http://localhost:3000/api/parties/669c3d52afb68bedbea61f72
+
+###
+
+PUT http://localhost:3000/api/parties/669c3e13244c51df786b21d4
+Content-Type: application/json
+
+{
+    "title": "Meu evento PRINCIPAL",
+    "author": "Danner KURTZ",
+    "description": "Uma festa pique PROJECT X",
+    "budget": 18500,
+    "image": "UMA URL QUALQUER!",
+    "services": [{
+        "name": "Algum serviço 2",
+        "description": "Algo",
+        "price": 2500,
+        "image": "Alguma url"
+    }]
+}
